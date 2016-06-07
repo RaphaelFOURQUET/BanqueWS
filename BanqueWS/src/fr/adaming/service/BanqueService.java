@@ -19,11 +19,13 @@ public class BanqueService {
 	}
 	
 	//methode pour retourner un compte
+	@WebMethod
 	public Compte getCompte(@WebParam(name="idCompte") long id) {
 		return new Compte(id, Math.random()*8000);
 	}
 	
 	//Retourner la liste des comptes
+	@WebMethod
 	public List<Compte> getComptes() {
 		List<Compte> cptes = new ArrayList<Compte>();
 		cptes.add(new Compte(1L, Math.random()*8000));

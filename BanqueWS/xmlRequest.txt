@@ -1,0 +1,29 @@
+
+http://localhost:8585/BanqueWS?wsdl
+
+Content-Type: text/xml
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.adaming.fr/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ser:conversionEuroToFranc>
+      <montant>300</montant>
+    </ser:conversionEuroToFranc>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.adaming.fr/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getCompte>
+         <idCompte>1</idCompte>
+      </ser:getCompte>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.adaming.fr/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ser:getComptes/>
+  </soapenv:Body>
+</soapenv:Envelope>

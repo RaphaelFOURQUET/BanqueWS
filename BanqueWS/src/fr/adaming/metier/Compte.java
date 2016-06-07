@@ -53,6 +53,11 @@ public class Compte implements Serializable {
 		this.idCompte = id;
 		this.solde = solde;
 	}
+
+	@Override
+	public String toString() {
+		return "Compte [idCompte=" + idCompte + ", solde=" + solde + ", dateCreation=" + dateCreation + "]";
+	}
 	
 	
 
